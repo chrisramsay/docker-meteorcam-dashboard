@@ -25,7 +25,7 @@ meteor-dashboard/
 ├── generate_meteor_reports.sh
 ├── README.md
 └── meteors/                  # Hugo Site Source (Mounted as Volume)
-    ├── config.toml
+    ├── hugo.toml
     ├── content/
     │   ├── reports/          # Auto-generated camera reports (.md)
     │   └── _index.md         # Auto-generated network dashboard
