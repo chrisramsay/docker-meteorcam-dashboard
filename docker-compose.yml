@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  meteor-dashboard:
+    build: .
+    container_name: meteor-dashboard
+    restart: unless-stopped
+    ports:
+      - "8088:80"
+    volumes:
+      # Mounts the local 'meteors' folder relative to docker-compose.yml
+      - ./meteors:/app/meteors
