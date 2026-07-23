@@ -106,8 +106,8 @@ ports:
 
 * **Cron Execution Time:** To adjust when the daily update runs, modify the crontab schedule inside `entrypoint.sh`:
 ```bash
-# Example: Run every morning at 05:30 AM
-30 5 * * * /app/generate_meteor_reports.sh && cd /app/meteors && hugo
+# Example: Run every morning at 06:00 AM
+0 6 * * * /app/generate_meteor_reports.sh && cd /app/meteors && hugo
 
 ```
 
