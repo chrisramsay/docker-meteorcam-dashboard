@@ -1,0 +1,10 @@
+# Hugo build output
+meteors/public/
+meteors/resources/_gen/
+
+# OS / Editor clutter
+.DS_Store
+*.log
+
+# Environment variables (if you decide to use .env later)
+.env
