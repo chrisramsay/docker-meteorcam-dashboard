@@ -43,10 +43,12 @@ meteor-dashboard/
 
 * [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/) installed on the host machine (e.g., Ubuntu, Debian, or OpenMediaVault).
 
-### 1. Clone the Repository
+### 1. Clone the Repository (with Submodules)
+
+Make sure to include `--recursive` so Git automatically pulls down the `PaperMod` theme submodule along with the project:
 
 ```bash
-git clone [https://github.com/YOUR_USERNAME/meteor-dashboard.git](https://github.com/YOUR_USERNAME/meteor-dashboard.git)
+git clone --recursive https://github.com/chrisramsay/docker-meteorcam-dashboard/
 cd meteor-dashboard
 
 ```
