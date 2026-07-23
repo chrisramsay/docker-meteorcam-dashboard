@@ -19,6 +19,7 @@ An automated, containerized dashboard that aggregates nightly observation summar
 ```text
 meteor-dashboard/
 ├── .gitignore
+|── .gitmodules
 ├── Dockerfile
 ├── docker-compose.yml
 ├── entrypoint.sh
