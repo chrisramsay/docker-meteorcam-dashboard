@@ -1,6 +1,6 @@
-# ☄️ Global Meteor Network - Local Dashboard
+# ☄️ UK Meteor Network - Local Dashboard
 
-An automated, containerized dashboard that aggregates nightly observation summaries, statistics, and static visual outputs from multiple Global Meteor Network (GMN) RMS cameras into a locally hosted [Hugo](https://gohugo.io/) website served via Nginx.
+An automated, containerized dashboard that aggregates nightly observation summaries, statistics, and static visual outputs from multiple UK Meteor Network (GMN) RMS cameras into a locally hosted [Hugo](https://gohugo.io/) website served via Nginx.
 
 ---
 
@@ -78,7 +78,7 @@ http://<HOST_IP>:8088
 
 1. **On Boot:** The container entrypoint script (`entrypoint.sh`) triggers `generate_meteor_reports.sh` immediately to fetch the latest camera summaries and compile the Hugo static HTML into `meteors/public/`.
 2. **Daily Schedule:** An internal `crond` task runs automatically every morning at **06:00 AM**:
-* Downloads fresh JSON metadata from `globalmeteornetwork.org`.
+* Downloads fresh JSON metadata from [archive.ukmeteors.co.uk](https://archive.ukmeteors.co.uk/).
 * Overwrites static Markdown files inside `meteors/content/reports/`.
 * Re-compiles the Hugo site.
 
